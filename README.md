@@ -1,5 +1,5 @@
-[![Build Status](https://travis-ci.org/xrdocs/multicast.svg?branch=gh-pages)](https://travis-ci.org/xrdocs/multicast)
+[![Build Status](https://travis-ci.org/xrdocs/routed-pon.svg?branch=gh-pages)](https://travis-ci.org/xrdocs/routed-pon)
 
-# Multicast
+# Routed Pon
 
-Blogs, Documentation and Tutorials on Multicast with IOS XR devices.
+Blogs, Documentation and Tutorials on Routed Pon with IOS XR devices.
