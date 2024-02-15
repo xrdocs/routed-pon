@@ -17,11 +17,22 @@ position: hidden
 
 ## Introduction
 
-Since its development in mid 1990's, Passive Optical Network (PON) (put the cisco link of PON) has evolved a long way. In the initial deployments, Fiber to the home - FTTH was the dominating use case. Recently new business cases like video (8k, 12k), AR/VR, Enhanced Gaming, and Enterprise Services are driving the needs for broadband network transformation. To prepare for the future growth, industry is moving from 1G GPON to 10G XGS-PON. XGS-PON as defined by ITU-T G.9807.1, supports high speed 10G symmetrical data rates in both upstream and downstream directions. XGS-PON is becoming the popular choice of deployment for last mile and middle mile operators. Apart from subscriber needs, there are various [broadband funding initiatives](https://www-author.cisco.com/content/en/us/solutions/service-provider/rural-broadband.html?wcmmode=disabled) taken by the governments worldwide to provide broadband access to the underserved communities. This brings in new opportunities for the BSPs to establish a new network foundation to transform the rural communities and make reliable connectivity more accessible with Cisco solutions and expertise.
+Since its development in mid 1990's, [Passive Optical Network (PON)](https://www.cisco.com/c/en/us/products/switches/what-is-passive-optical-networking.html) has evolved a long way. In the initial deployments, Fiber to the home - FTTH was the dominating use case. Recently new business cases like video (8k, 12k), AR/VR, Enhanced Gaming, and Enterprise Services are driving the needs for broadband network transformation. To prepare for the future growth, industry is moving from 1G GPON to 10G XGS-PON. XGS-PON as defined by ITU-T G.9807.1, supports high speed 10G symmetrical data rates in both upstream and downstream directions. XGS-PON is becoming the popular choice of deployment for last mile and middle mile operators. Apart from subscriber needs, there are various [broadband funding initiatives](https://www-author.cisco.com/content/en/us/solutions/service-provider/rural-broadband.html?wcmmode=disabled) taken by the governments worldwide to provide broadband access to the underserved communities. This brings in new opportunities for the Broadband Service Providers - BSPs to establish a new network foundation to transform the rural communities and make reliable connectivity more accessible with Cisco solutions and expertise.
 
 ## Challenges of the current PON deployments
 
-Traditional deployments have huge OLT (Optical line terminal) chassis terminating on the BSPs access or aggregation network. These chassis consumes extra space and power which increases the operational costs. The dedicated chassis operate within a closed software ecosystem resulting in vendor lockin. They also lag the support for pay-as-you grow model and hence the BSP's end up buying entrie line card. In some scenarios, the chassis remain underutilized as all the ports are not being used up. Upgrading the chassis to support higher speeds becomes and expensive affair for the operators. And finally they
+![Screenshot 2024-02-15 at 12.45.27 PM.png]({{site.baseurl}}/images/Screenshot 2024-02-15 at 12.45.27 PM.png)
+
+Traditional deployments have huge OLT (Optical line terminal) chassis terminating on the BSPs access or aggregation network. They typically have flat Layer2 domains using native ethernet technologies. Though many operators feel that deploying layer2 switching is simpler but [moving to IP](https://xrdocs.io/design/blogs/2023-11-15-routed-access-for-rural-broadband/) brings in more benefits to access networks. BSPs are looking for faster, simpler and economical ways of providing the subscriber service and there are various challenges faced by them, when it comes to deploying single purpose OLT chassis:
+
+-Vendor Lockin: Traditional OLT chassis tend to have a closed and proprietary software ecosystem which causes the product and support available only from a particular vendor. These causes the BSPs to depend on a fixed vendor.
+-Increase in OPEX: The OLT chassis need dedicated power and space requirements causing resulting in higher operational cost.
+-Lack of Solution Modularity: The OLT chassis lack pay-as-you grow model and BSPs end up purchasing full line cards. This sometimes ends up having the chassis under utilized.  
+-Upgrade to higher speeds: Upgrading from 1G to 10G/25G/50G becomes a heavy investment for the BSPs. The older chassis are not capable of supporting the higher speeds and they have to be forklifted to be replaced by newer chassis.
+-Software upgrades: Operators have to maintain two different life cycles. One of the network equipments and other for the OLT chassis. This sometimes increases the operational overhead.
+-MEF compliance: The purpose built OLT chassis 
+
+
 
 ## Cisco's Approach to the problem
 
