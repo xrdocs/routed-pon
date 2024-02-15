@@ -33,10 +33,9 @@ Traditional deployments have huge OLT (Optical line terminal) chassis terminatin
 - **Lack of MEF compliance**: The purpose built OLT chassis lack or have minimal support for MEF compliance. This poses a problem for the operators to deliver services and SLA compliance as per MEF standards.
 
 
-
 ## Cisco's Approach to the problem
 
-
+Cisco's PON solution aims at solving the above problems by collapsing the OLT chassis to a pluggable form factor
 
 ## Cisco Routed PON Components 
 
