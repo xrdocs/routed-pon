@@ -25,16 +25,18 @@ Since its development in mid 1990's, [Passive Optical Network (PON)](https://www
 
 Traditional deployments have huge OLT (Optical line terminal) chassis terminating on the BSPs access or aggregation network. They typically have flat Layer2 domains using native ethernet technologies. Though many operators feel that deploying layer2 switching is simpler but [moving to IP](https://xrdocs.io/design/blogs/2023-11-15-routed-access-for-rural-broadband/) brings in more benefits to access networks. BSPs are looking for faster, simpler and economical ways of providing the subscriber service and there are various challenges faced by them, when it comes to deploying single purpose OLT chassis:
 
--**Vendor Lockin**: Traditional OLT chassis tend to have a closed and proprietary software ecosystem which causes the product and support available only from a particular vendor. These causes the BSPs to depend on a fixed vendor.
--**Increase in OPEX**: The OLT chassis need dedicated power and space requirements causing resulting in higher operational cost.
--**Lack of Solution Modularity**: The OLT chassis lack pay-as-you grow model and BSPs end up purchasing full line cards. This sometimes ends up having the chassis under utilized.  
--**Difficulties to upgrade to higher speeds**: Upgrading from 1G to 10G/25G/50G becomes a heavy investment for the BSPs. The older chassis are not capable of supporting the higher speeds and they have to be forklifted to be replaced by newer chassis.
--**Software upgrades**: Operators have to maintain two different life cycles. One of the network equipments and other for the OLT chassis. This sometimes increases the operational overhead.
--**Lack of MEF compliance**: The purpose built OLT chassis lack or have minimal support for MEF compliance. This poses a problem for the operators to deliver services and SLA compliance as per MEF standards.
+- **Vendor Lockin**: Traditional OLT chassis tend to have a closed and proprietary software ecosystem which causes the product and support available only from a particular vendor. These causes the BSPs to depend on a fixed vendor.
+- **Increase in OPEX**: The OLT chassis need dedicated power and space requirements causing resulting in higher operational cost.
+- **Lack of Solution Modularity**: The OLT chassis lack pay-as-you grow model and BSPs end up purchasing full line cards. This sometimes ends up having the chassis under utilized.  
+- **Difficulties to upgrade to higher speeds**: Upgrading from 1G to 10G/25G/50G becomes a heavy investment for the BSPs. The older chassis are not capable of supporting the higher speeds and they have to be forklifted to be replaced by newer chassis.
+- **Software upgrades**: Operators have to maintain two different life cycles. One of the network equipments and other for the OLT chassis. This sometimes increases the operational overhead.
+- **Lack of MEF compliance**: The purpose built OLT chassis lack or have minimal support for MEF compliance. This poses a problem for the operators to deliver services and SLA compliance as per MEF standards.
 
 
 
 ## Cisco's Approach to the problem
+
+
 
 ## Cisco Routed PON Components 
 
