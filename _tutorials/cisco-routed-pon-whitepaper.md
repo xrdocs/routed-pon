@@ -68,4 +68,10 @@ Cisco PON OLT is a feature rich device contained in a hot pluggable SFP+ form fa
 
 ### Cisco PON Controller
 
+![Screenshot 2024-02-16 at 10.14.04 AM.png]({{site.baseurl}}/images/Screenshot 2024-02-16 at 10.14.04 AM.png)
+
+The Cisco PON controller is a stateless management controller and device driver application for configuring and monitoring the end points in a PON network. It is a light-weight application which runs as a docker container on each NCS540/5500/5700 devices. The database serves as the northbound application programming interface for the PON controller. It applies configuration to OLT and ONT/ONU devices from the documents in MongoDB. At each polling cycle, the PON controller also collects state information, statistics, alarms and logs from devices and reports the information to higher layer applications through MongoDB. The controller's southbound interface is a Python API used to program the PON elements using the OMCI protocol. 
+
 ### Cisco PON Manager
+
+
