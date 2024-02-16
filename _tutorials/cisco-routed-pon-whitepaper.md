@@ -74,7 +74,7 @@ The Cisco PON controller is a stateless management controller and device driver 
 
 ### Cisco PON Manager
 
-![Screenshot 2024-02-16 at 10.39.35 AM.png]({{site.baseurl}}/images/Screenshot 2024-02-16 at 10.39.35 AM.png)
+![Screenshot 2024-02-16 at 10.54.10 AM.png]({{site.baseurl}}/images/Screenshot 2024-02-16 at 10.54.10 AM.png)
 
 The Cisco PON manager is a single page web application and an accompanying REST API that provides a grahical user interface for managing the PON network. The REST API accompanies the web application for the purposes of providing access to MongoDB for managing PON manager users and the PON network. The PON manager facilitates 
  - alarm management
