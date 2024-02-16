@@ -84,3 +84,9 @@ The Cisco PON manager is a single page web application and an accompanying REST 
  - service configuration
  - user management 
  - database management
+
+## Converge services with Cisco Metro Architecture
+
+![Screenshot 2024-02-16 at 11.24.37 AM.png]({{site.baseurl}}/images/Screenshot 2024-02-16 at 11.24.37 AM.png)
+
+Transform the broadband infrastructure with [Cisco Converged Transport Architecture](https://www.cisco.com/c/en/us/solutions/collateral/service-provider/converged-sdn-transport/solution-overview-c22-744219.html) to deliver simplified, [trustworthy](https://www.cisco.com/c/en/us/about/trust-center/technology-built-in-security.html#~trustworthysolutionsfeatures), [programmable network](https://www.cisco.com/c/en/us/solutions/segment-routing.html#~segment-routing-basics). Operators can use the advanced technology and solutions which help design and migrate to a network that scales to meet the stringent bandwidth and performance demands. Implementing this design allows the broadband service providers to achieve the following business benefits: 
