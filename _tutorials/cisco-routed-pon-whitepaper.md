@@ -35,7 +35,11 @@ Traditional deployments have huge OLT (Optical line terminal) chassis terminatin
 
 ## Cisco's Approach to the problem
 
-Cisco's PON solution aims at solving the above problems by collapsing the OLT chassis to a pluggable form factor
+Cisco's PON solution aims at solving the above problems by collapsing the OLT chassis to a pluggable form factor. PON is now considered just another ethernet port.
+
+![Screenshot 2024-02-15 at 2.48.38 PM.png]({{site.baseurl}}/images/Screenshot 2024-02-15 at 2.48.38 PM.png)
+
+This will make PON network a direct part of the [Routed Access Layer](https://xrdocs.io/design/blogs/2023-11-15-routed-access-for-rural-broadband/). Operators can now directly plug the Cisco PON SFP+ into 10G ports of [NCS540](https://www.cisco.com/c/en/us/products/routers/network-convergence-system-540-series-routers/index.html) and [NCS5500/NCS5700](https://www.cisco.com/c/en/us/products/routers/network-convergence-system-5500-series/index.html) series routers. Operators can now leverage port based scalable model and decide whether to have all the ports with PON or Ethernet optics. This also allows form factor for future growth to higher speeds like 25G or 50G PON. Operators can choose the native ports that support the 25G and 50G form factors and use the existing infrastructure to deliver the new services. This results in the elimination of the dedicated PON chassis built for single purpose. The Cisco Routed PON solution allows the PON services to be delivered seamlessly in similar manner like direct internet access, mobile backhaul and WAN services.
 
 ## Cisco Routed PON Components 
 
