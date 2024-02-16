@@ -48,7 +48,8 @@ Below are the main components of the solution:
 
 ### Cisco PON OLT
 
-![OLT_5.jpg]({{site.baseurl}}/images/OLT_5.jpg)
+![Screenshot 2024-02-15 at 4.42.23 PM.png]({{site.baseurl}}/images/Screenshot 2024-02-15 at 4.42.23 PM.png)
+
 
 Cisco PON OLT is a feature rich device contained in a hot pluggable SFP+ form factor facilitating a software defined broadband network deployment. It contains built-in 10G Ethernet to XGS PON MAC Bridge IC and L1 optical transceiver. The integrated chip allows the module to connect to a PON network to a point-to-point Ethernet SFP+ port on the routers. It supports port by port expansion on NCS540 and NCS5500/5700 router ports. It is suitable for high bandwidth business PON connectivity as well as high density PON aggregation. It supports symmetric rates of 10G upstream and downstream. It is compliant with [ITU-T G.9807.1 XGS PON](https://www.itu.int/rec/T-REC-G.9807.1) standard. It can interop with various non proprietary ONTs/ONUs available in the market as long as it supports OMCI protocol. Below are some of the quick facts of the OLT.
 
@@ -66,4 +67,5 @@ Cisco PON OLT is a feature rich device contained in a hot pluggable SFP+ form fa
 
 
 ### Cisco PON Controller
+
 ### Cisco PON Manager
