@@ -41,9 +41,29 @@ Cisco's PON solution aims at solving the above problems by collapsing the OLT ch
 
 This will make PON network a direct part of the [Routed Access Layer](https://xrdocs.io/design/blogs/2023-11-15-routed-access-for-rural-broadband/). Operators can now directly plug the Cisco PON SFP+ into 10G ports of [NCS540](https://www.cisco.com/c/en/us/products/routers/network-convergence-system-540-series-routers/index.html) and [NCS5500/NCS5700](https://www.cisco.com/c/en/us/products/routers/network-convergence-system-5500-series/index.html) series routers. Operators can now leverage port based scalable model and decide whether to have all the ports with PON or Ethernet optics. This also allows form factor for future growth to higher speeds like 25G or 50G PON. Operators can choose the native ports that support the 25G and 50G form factors and use the existing infrastructure to deliver the new services. This results in the elimination of the dedicated PON chassis built for single purpose. The Cisco Routed PON solution allows the PON services to be delivered seamlessly in similar manner like direct internet access, mobile backhaul and WAN services.
 
-## Cisco Routed PON Components 
+## Solution Architecture and Components 
 
-### Router
+Below are the main components of the solution:
+
+
 ### Cisco PON OLT
-### Cisco PON Agent
+
+![OLT_5.jpg]({{site.baseurl}}/images/OLT_5.jpg)
+
+Cisco PON OLT is a feature rich device contained in a hot pluggable SFP+ form factor facilitating a software defined broadband network deployment. It contains built-in 10G Ethernet to XGS PON MAC Bridge IC and L1 optical transceiver. The integrated chip allows the module to connect to a PON network to a point-to-point Ethernet SFP+ port on the routers. It supports port by port expansion on NCS540 and NCS5500/5700 router ports. It is suitable for high bandwidth business PON connectivity as well as high density PON aggregation. It supports symmetric rates of 10G upstream and downstream. It is compliant with [ITU-T G.9807.1 XGS PON](https://www.itu.int/rec/T-REC-G.9807.1) standard. It can interop with various non proprietary ONTs/ONUs available in the market as long as it supports OMCI protocol. Below are some of the quick facts of the OLT.
+
+| Dimension(H x W x D)      | 8.55mm x 13.4mm x 80.65mm                        |
+|---------------------------|--------------------------------------------------|
+| PID                       | SFP-10G-OLT20-X                                  |
+| Data rate                 | Symmetric rates: 9.95G upstream/9.95G downstream |
+| Connector Type            | SC/UPC                                           |
+| Maximum Distance          | 20 km                                            |
+| Operating Temperature     | -20°C to 75°C                                    |
+| Typical Power Consumption | 2.475W                                           |
+| Average Launch Power      | 4 dbm min 7 dbm max                              |
+| ODN Class                 | N2                                               |
+| Cable Type                | Single Mode Fiber                                |
+
+
 ### Cisco PON Controller
+### Cisco PON Manager
