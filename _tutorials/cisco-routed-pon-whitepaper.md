@@ -84,7 +84,3 @@ The Cisco PON manager is a single page web application and an accompanying REST 
  - service configuration
  - user management 
  - database management
- 
- 
-
-
