@@ -110,4 +110,10 @@ Transform the broadband infrastructure with [Cisco Converged Transport Architect
 
 **Converged Architecture:** Simplify the network with pluggable form factor OLTs and Cisco NCS540/5500/5700 for unified transport and deliver next gen broadband services with MEF compliance
 
+## References
+
+- [Cisco's solution for Rural Broadband](https://www.cisco.com/c/en/us/solutions/service-provider/rural-broadband.html)
+- [Customer Success stories](https://www.cisco.com/c/en/us/solutions/service-provider/rural-broadband.html#~customer-success)
+- [Rural Broadband Resources](https://blogs.cisco.com/tag/rural-broadband)
+
 
