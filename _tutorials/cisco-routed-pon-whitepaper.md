@@ -98,4 +98,7 @@ Transform the broadband infrastructure with [Cisco Converged Transport Architect
 - Decreased costs
 
 
-##
+## Transform the economics with Cisco Routed PON
+
+![Screenshot 2024-02-19 at 11.15.25 AM.png]({{site.baseurl}}/images/Screenshot 2024-02-19 at 11.15.25 AM.png)
+
