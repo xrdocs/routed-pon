@@ -102,3 +102,12 @@ Transform the broadband infrastructure with [Cisco Converged Transport Architect
 
 ![Screenshot 2024-02-19 at 11.15.25 AM.png]({{site.baseurl}}/images/Screenshot 2024-02-19 at 11.15.25 AM.png)
 
+**Flexibility:** Overlay onto an existing optical distribution network, with support for ITU-T and a roadmap to upgrading to higher speeds. Interop with multiple 3rd party ONTs and avoid vendor lock-in.
+
+**Investment protection:** Grow your network on a port-by-port basis instead of incrementally adding fixed line cards on a chassis-based OLT, ensuring a more effective use of capital.
+
+**Opex savings, sustainability gains:** Decrease space and power requirements as a traditional chassis-based OLT is reduced to a pluggable optic.
+
+**Converged Architecture:** Simplify the network with pluggable form factor OLTs and Cisco NCS540/5500/5700 for unified transport and deliver next gen broadband services with MEF compliance
+
+
