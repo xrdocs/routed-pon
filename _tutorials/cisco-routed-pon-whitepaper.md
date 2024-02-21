@@ -23,13 +23,13 @@ Since its development in mid 1990's, Passive Optical Network (PON) has evolved a
 
 ![Screenshot 2024-02-21 at 1.46.53 PM.png]({{site.baseurl}}/images/Screenshot 2024-02-21 at 1.46.53 PM.png)
 
-Traditional deployments have huge OLT (Optical line terminal) chassis terminating on the BSPs access or aggregation network. They typically have flat Layer2 domains using native ethernet technologies. Though many operators feel that deploying layer2 switching is simpler but [moving to IP](https://xrdocs.io/design/blogs/2023-11-15-routed-access-for-rural-broadband/) brings in more benefits to access networks. BSPs are looking for faster, simpler and economical ways of providing the subscriber services and they are facing various challenges with deployments of single purpose OLT chassis:
+Traditional deployments have huge OLT (Optical line terminal) chassis terminating on the BSPs access or aggregation network. They typically have flat Layer2 domains using native ethernet technologies. Though many operators feel that deploying layer2 switching is simpler but [moving to IP](https://xrdocs.io/design/blogs/2023-11-15-routed-access-for-rural-broadband/) brings in more benefits to access networks. BSPs are looking for way to increase ARPU (differentiated services) and not just reducing costs. They are facing various challenges with deployments of single purpose OLT chassis:
 
 - **Vendor Lockin**: Traditional OLT chassis tend to have a closed and proprietary software ecosystem which causes the product and support available only from a particular vendor. This locks the BSPs to depend on a fixed vendor.
 - **Increase in OPEX**: The OLT chassis need dedicated power and space requirements resulting in higher operational cost.
 - **Lack of Solution Modularity**: The OLT chassis lacks pay-as-you grow model and BSPs end up purchasing full line cards. This sometimes ends up having the chassis under utilized.  
 - **Difficulties to upgrade to higher speeds**: Upgrading from 1G to 10G/25G/50G becomes a heavy investment for the BSPs. The older chassis are not capable of supporting the higher speeds and they have to be forklifted to be replaced by newer chassis.
-- **Software upgrades**: Operators have to maintain two different life cycles. One for the network equipments and other for the OLT chassis. This sometimes increases the operational overhead.
+- **Software upgrades**: Operators have to maintain two different life cycles. One for the network equipments (e.g routers) and other for the OLT chassis (firmware/os upgrades). This sometimes increases the operational overhead.
 - **Lack of MEF compliance**: The purpose built OLT chassis lack or have minimal support for MEF compliance. This poses a problem for the operators to deliver services and SLA compliance as per MEF standards.
 
 
@@ -37,7 +37,7 @@ Traditional deployments have huge OLT (Optical line terminal) chassis terminatin
 
 Cisco's PON solution aims at solving the above problems by collapsing the OLT chassis to a pluggable form factor. PON is now considered just another ethernet port.
 
-![Screenshot 2024-02-15 at 2.48.38 PM.png]({{site.baseurl}}/images/Screenshot 2024-02-15 at 2.48.38 PM.png)
+![Screenshot 2024-02-21 at 1.59.38 PM.png]({{site.baseurl}}/images/Screenshot 2024-02-21 at 1.59.38 PM.png)
 
 This will make PON network a direct part of the [Routed Access Layer](https://xrdocs.io/design/blogs/2023-11-15-routed-access-for-rural-broadband/). Operators can now directly plug the Cisco PON SFP+ into 10G ports of [NCS540](https://www.cisco.com/c/en/us/products/routers/network-convergence-system-540-series-routers/index.html) and [NCS5500/NCS5700](https://www.cisco.com/c/en/us/products/routers/network-convergence-system-5500-series/index.html) series routers. Operators can now leverage port based scalable model and decide whether to have all the ports with PON or Ethernet optics. This also allows form factor for future growth to higher speeds like 25G or 50G PON. Operators can choose the native ports that support the 25G and 50G form factors and use the existing infrastructure to deliver the new services. This results in the elimination of the dedicated PON chassis built for single purpose. The Cisco Routed PON solution allows the PON services to be delivered seamlessly in similar manner like direct internet access, mobile backhaul and WAN services.
 
@@ -46,7 +46,7 @@ This will make PON network a direct part of the [Routed Access Layer](https://xr
 Below are the main components of the solution:
 
 
-### Cisco PON OLT
+### Cisco Routed PON OLT Pluggable
 
 ![Screenshot 2024-02-15 at 4.42.23 PM.png]({{site.baseurl}}/images/Screenshot 2024-02-15 at 4.42.23 PM.png)
 
@@ -72,7 +72,7 @@ Cisco PON OLT is a feature rich device contained in a hot pluggable SFP+ form fa
 
 The Cisco PON controller is a stateless management controller and device driver application for configuring and monitoring the end points in a PON network. It is a light-weight application which runs as a docker container on each NCS540/5500/5700 devices. The database serves as the northbound application programming interface for the PON controller. It applies configuration to OLT and ONT/ONU devices from the documents in MongoDB. At each polling cycle, the PON controller also collects state information, statistics, alarms and logs from devices and reports the information to higher layer applications through MongoDB. The controller's southbound interface is a Python API used to program the PON elements using the OMCI protocol. 
 
-### Cisco PON Manager
+### Cisco Routed PON Manager
 
 ![Screenshot 2024-02-16 at 10.54.10 AM.png]({{site.baseurl}}/images/Screenshot 2024-02-16 at 10.54.10 AM.png)
 
@@ -89,7 +89,7 @@ The Cisco PON manager is a single page web application and an accompanying REST 
 
 ![Screenshot 2024-02-16 at 11.24.37 AM.png]({{site.baseurl}}/images/Screenshot 2024-02-16 at 11.24.37 AM.png)
 
-Transform the broadband infrastructure with [Cisco Converged Transport Architecture](https://www.cisco.com/c/en/us/solutions/collateral/service-provider/converged-sdn-transport/solution-overview-c22-744219.html) to deliver simplified, [trustworthy](https://www.cisco.com/c/en/us/about/trust-center/technology-built-in-security.html#~trustworthysolutionsfeatures), [programmable network](https://www.cisco.com/c/en/us/solutions/segment-routing.html#~segment-routing-basics). Operators can use the advanced technology and solutions which help design and migrate to a network that scales to meet the stringent bandwidth and performance demands. Implementing this design allows the broadband service providers to achieve the following business benefits: 
+Transform the broadband infrastructure with [Cisco Converged Transport Architecture](https://www.cisco.com/c/en/us/solutions/service-provider/converged-sdn-transport.html) to deliver simplified, [trustworthy](https://www.cisco.com/c/en/us/about/trust-center/technology-built-in-security.html#~trustworthysolutionsfeatures), [programmable network](https://www.cisco.com/c/en/us/solutions/segment-routing.html#~segment-routing-basics). Operators can use the advanced technology and solutions which help design and migrate to a network that scales to meet the stringent bandwidth and performance demands. Implementing this design allows the broadband service providers to achieve the following business benefits: 
 
 - Reduced operational complexity for network management
 - Increased revenue with a service-centric network
