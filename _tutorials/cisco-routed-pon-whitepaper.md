@@ -17,11 +17,11 @@ position: hidden
 
 ## Introduction
 
-Since its development in mid 1990's, [Passive Optical Network (PON)](https://www.cisco.com/c/en/us/products/switches/what-is-passive-optical-networking.html) has evolved a long way. In the initial deployments, Fiber to the home - FTTH was the dominating use case. Recently new business cases like video (8k, 12k), AR/VR, Enhanced Gaming, and Enterprise Services are driving the needs for broadband network transformation. To prepare for the future growth, industry is moving from 1G GPON to 10G XGS-PON. XGS-PON as defined by [ITU-T G.9807.1](https://www.itu.int/rec/T-REC-G.9807.1), supports high speed 10G symmetrical data rates in both upstream and downstream directions. XGS-PON is becoming the popular choice of deployment for last mile and middle mile operators. Apart from subscriber needs, there are various [broadband funding initiatives](https://www-author.cisco.com/content/en/us/solutions/service-provider/rural-broadband.html?wcmmode=disabled) taken by the governments worldwide to provide broadband access to the underserved communities. This brings in new opportunities for the Broadband Service Providers - BSPs to establish a new network foundation to transform the rural communities and make reliable connectivity more accessible with Cisco solutions and expertise.
+Since its development in mid 1990's, Passive Optical Network (PON) has evolved a long way. In the initial deployments, Fiber to the home - FTTH was the dominating use case. Recently new business cases like video (8k, 12k), AR/VR, Enhanced Gaming, and Enterprise Services are driving the needs for broadband network transformation. To prepare for the future growth, industry is moving from 1G GPON to 10G XGS-PON. XGS-PON as defined by [ITU-T G.9807.1](https://www.itu.int/rec/T-REC-G.9807.1), supports high speed 10G symmetrical data rates in both upstream and downstream directions. XGS-PON is becoming the popular choice of deployment for last mile and middle mile operators. Apart from subscriber needs, there are various [broadband funding initiatives](https://www-author.cisco.com/content/en/us/solutions/service-provider/rural-broadband.html?wcmmode=disabled) taken by the governments worldwide to provide broadband access to the underserved communities. This brings in new opportunities for the Broadband Service Providers - BSPs to establish a new network foundation to transform the rural communities and make reliable connectivity more accessible with Cisco solutions and expertise.
 
 ## Challenges of the current PON deployments
 
-![Screenshot 2024-02-15 at 12.45.27 PM.png]({{site.baseurl}}/images/Screenshot 2024-02-15 at 12.45.27 PM.png)
+![Screenshot 2024-02-21 at 1.46.53 PM.png]({{site.baseurl}}/images/Screenshot 2024-02-21 at 1.46.53 PM.png)
 
 Traditional deployments have huge OLT (Optical line terminal) chassis terminating on the BSPs access or aggregation network. They typically have flat Layer2 domains using native ethernet technologies. Though many operators feel that deploying layer2 switching is simpler but [moving to IP](https://xrdocs.io/design/blogs/2023-11-15-routed-access-for-rural-broadband/) brings in more benefits to access networks. BSPs are looking for faster, simpler and economical ways of providing the subscriber services and they are facing various challenges with deployments of single purpose OLT chassis:
 
@@ -115,5 +115,3 @@ Transform the broadband infrastructure with [Cisco Converged Transport Architect
 - [Cisco's solution for Rural Broadband](https://www.cisco.com/c/en/us/solutions/service-provider/rural-broadband.html)
 - [Customer Success stories](https://www.cisco.com/c/en/us/solutions/service-provider/rural-broadband.html#~customer-success)
 - [Rural Broadband Resources](https://blogs.cisco.com/tag/rural-broadband)
-
-
