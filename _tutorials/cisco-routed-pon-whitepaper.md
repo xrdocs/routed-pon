@@ -11,7 +11,7 @@ tags:
   - Routed-PON
   - Routed PON
   - OLT
-position: hidden
+position: top
 ---
 {% include toc icon="table" title="Cisco Routed PON" %}
 
